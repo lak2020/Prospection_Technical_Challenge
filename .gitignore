@@ -1,0 +1,7 @@
+.gradle
+.idea
+build
+allure-report
+allure-results
+img.png
+img_1.png
