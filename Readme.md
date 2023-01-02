@@ -31,7 +31,3 @@ allure serve allure-results
 ```
 4. Navigate to "allure-report" folder
 5. Open index.html in a browser to view report
-
-## Here is the "Allure Report" of my project:
-![img.png](img.png)
-![img_1.png](img_1.png)
