@@ -13,6 +13,8 @@ public class BasePage {
     WebElement desiredItem;
     @FindBy(className = "meteye-link")
     WebElement linkMapView;
+    @FindBy(xpath = "//*[@id='container']/h1")
+    WebElement weatherPageTitle;
 
     public BasePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -21,6 +23,10 @@ public class BasePage {
     public void searchingLocation() {
         fieldChangeLocation.sendKeys("2000");
         desiredItem.click();
+    }
+    
+    public String getweatherPageTitle() {
+    	return weatherPageTitle.getText();
     }
 
     public void goingToMapView() {

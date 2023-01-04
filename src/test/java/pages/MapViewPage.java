@@ -9,11 +9,17 @@ public class MapViewPage {
     WebDriver driver;
     @FindBy(id = "ext-gen650")
     WebElement closeForecast;
-    @FindBy(id = "legendWin")
+    @FindBy(id = "ext-gen44")
     WebElement lblLegend;
+    @FindBy(css = "#locname")
+    WebElement mapPageTitle;
 
     public MapViewPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
+    }
+    
+    public String getMapPageTitle() {
+    	return mapPageTitle.getText();
     }
 
     public void verifyLegend() {
